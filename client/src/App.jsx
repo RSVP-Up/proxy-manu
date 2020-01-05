@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Navbar from './Navbar';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +11,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>App rendering</div>;
+    return (
+      <div>
+        <Navbar />
+      </div>
+    );
   }
 }
 
