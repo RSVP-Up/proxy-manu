@@ -3,9 +3,6 @@ import {
   Menu,
   Image,
   Icon,
-  Grid,
-  Divider,
-  Container,
   Segment,
 } from 'semantic-ui-react';
 import styled from 'styled-components';
