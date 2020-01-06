@@ -1,8 +1,10 @@
 import React from 'react';
 
-import { Image, Container } from 'semantic-ui-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Inner from './Inner';
+
+import { Container, Segment } from 'semantic-ui-react';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,16 +16,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <Container fluid>
         <Navbar />
         {/* <div id="event"></div> */}
-        <Container>
-          {/* Two rails on one side image plus details + components */}
-          <Image src="https://source.unsplash.com/random" />
-          {/* Other components */}
-        </Container>
+        <Inner />
+        {/* <div id="rsvp"></div> */}
         <Footer />
-      </div>
+      </Container>
     );
   }
 }
