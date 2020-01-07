@@ -35,9 +35,15 @@ const Inner = () => (
           <div id="attendees" />
           <div>
             <Header as="h3" content="Photos" />
-            <Button fluid>Add photos</Button>
+            <Button basic fluid>Add photos</Button>
           </div>
-
+          <div>
+            <Header as="h3" content="Comments" />
+            {/* Comments */}
+          </div>
+          <div>
+            {/* Event card */}
+          </div>
         </Grid.Column>
         <Grid.Column>
           <Segment>
@@ -47,6 +53,9 @@ const Inner = () => (
           </Segment>
         </Grid.Column>
       </Grid>
+      <div>
+        {/* Similar events component*/}
+      </div>
     </Segment>
   </div>
 );
