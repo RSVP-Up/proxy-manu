@@ -6,10 +6,11 @@ import {
   Grid,
   Segment,
   Item,
+  Button,
 } from 'semantic-ui-react';
 
 const Inner = () => (
-  <div>
+  <div style={{ backgroundColor: '#F6F7F8' }}>
     <Segment vertical style={{ padding: '2em 3em' }}>
       <Grid container columns={2} verticalAlign="middle">
         <Grid.Column>
@@ -31,7 +32,12 @@ const Inner = () => (
           <Segment basic compact vertical>
             If you have any questions feel free to reach out to our team at <a href="http://inspirobot.me">insiprobot.me</a>
           </Segment>
-          {/* Other components */}
+          <div id="attendees" />
+          <div>
+            <Header as="h3" content="Photos" />
+            <Button fluid>Add photos</Button>
+          </div>
+
         </Grid.Column>
         <Grid.Column>
           <Segment>
