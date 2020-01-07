@@ -16,7 +16,7 @@ const StyledMenuItem = styled(Menu.Item)`
 const options = ['Explore', 'Messages', 'Notifications'];
 
 const Navbar = () => (
-  <Menu secondary pointing stackable>
+  <Menu secondary pointing stackable style={{ marginBottom: '0' }}>
     <Menu.Item as="a">
       <Image src="logo.svg" style={{ height: '44px' }} />
     </Menu.Item>
