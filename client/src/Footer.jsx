@@ -14,8 +14,8 @@ import {
 const Footer = () => (
   <div>
     <Segment style={{ margin: '5em 0em', padding: '5em 0em' }} vertical style={{ background: '#353E48' }}>
-      <Container>
-        <Grid columns={4} stackable>
+      <Container text>
+        <Grid columns="equal" stackable>
           <Grid.Row>
             <Grid.Column>
               <a href="#" style={{ textDecoration: 'underline', color: '#fff' }}>Start a new group</a>
@@ -51,7 +51,7 @@ const Footer = () => (
                 <List.Item as="a">Accessibility</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column width={5}>
               <Header inverted as="h4" content="Follow us" />
               <List horizontal link inverted>
                 <List.Item as="a">
@@ -62,9 +62,6 @@ const Footer = () => (
                 </List.Item>
                 <List.Item as="a">
                   <Icon name="youtube" />
-                </List.Item>
-                <List.Item as="a">
-                  <Icon name="instagram" />
                 </List.Item>
                 <List.Item as="a">
                   <Icon name="instagram" />
@@ -87,7 +84,7 @@ const Footer = () => (
       </Container>
     </Segment>
     <Segment style={{ margin: '5em 0em', padding: '5em 0em' }} vertical style={{ background: '#2F363F' }}>
-      <Container inverted>
+      <Container text inverted>
         <List horizontal inverted link size="small">
           <List.Item>
             <Icon name="copyright outline" />
@@ -102,7 +99,7 @@ const Footer = () => (
         </List>
       </Container>
       <br />
-      <Container inverted>
+      <Container text inverted>
         <List horizontal inverted link size="small">
           <List.Item as="a" href="#">
             Terms of Service

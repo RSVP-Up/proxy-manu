@@ -18,7 +18,7 @@ class App extends React.Component {
     return (
       <Container fluid>
         <Navbar />
-        {/* <div id="event"></div> */}
+        <div id="event"></div>
         <Inner />
         {/* <div id="rsvp"></div> */}
         <Footer />
