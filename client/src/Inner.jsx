@@ -14,7 +14,7 @@ const Inner = () => (
     <Segment vertical style={{ padding: '2em 3em' }}>
       <Container text>
         <Grid container columns={2} verticalAlign="middle">
-          <Grid.Column>
+          <Grid.Column style={{ paddingLeft: '0' }}>
             <Image src="https://source.unsplash.com/random/600x337" />
             <Header as="h3" content="Details" />
             <Segment basic compact vertical>
