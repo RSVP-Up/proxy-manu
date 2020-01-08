@@ -9,6 +9,8 @@ import {
   Button,
 } from 'semantic-ui-react';
 
+import Info from './Info';
+
 const Inner = () => (
   <div style={{ backgroundColor: '#F6F7F8' }}>
     <Segment vertical style={{ padding: '2em 3em' }}>
@@ -47,10 +49,7 @@ const Inner = () => (
             </div>
           </Grid.Column>
           <Grid.Column>
-            <Segment>
-              {/* Info container */}
-              Info cards
-            </Segment>
+            <Info />
           </Grid.Column>
         </Grid>
         <div>

@@ -20,7 +20,7 @@ class App extends React.Component {
         <Navbar />
         <div id="event"></div>
         <Inner />
-        {/* <div id="rsvp"></div> */}
+        <div id="rsvp"></div>
         <Footer />
       </Container>
     );
