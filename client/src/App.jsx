@@ -20,7 +20,13 @@ class App extends React.Component {
         <Navbar />
         <div id="event"></div>
         <Inner />
-        <div id="rsvp"></div>
+        <div
+          id="rsvp"
+          style={{
+            position: 'sticky',
+            bottom: 0,
+          }}
+        />
         <Footer />
       </Container>
     );
