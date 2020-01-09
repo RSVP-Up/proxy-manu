@@ -10,6 +10,7 @@ import {
   Icon,
   Image,
 } from 'semantic-ui-react';
+import FooterColumn from './FooterColumn';
 
 const Footer = () => (
   <div>
