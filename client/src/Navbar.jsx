@@ -48,8 +48,8 @@ const Navbar = () => (
                 30% OFF
             </Segment>
           </Menu.Item>
-          {options.map(option => (
-            <Segment basic compact style={{ margin: '10px 0px 0px 0px', padding: '14px 0px' }}>
+          {options.map( (option, index) => (
+            <Segment key={index} basic compact style={{ margin: '10px 0px 0px 0px', padding: '14px 0px' }}>
               <StyledMenuItem
                 key={option}
                 name={option}
