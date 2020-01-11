@@ -44,7 +44,7 @@ const Info = () => {
         padding: 20
       }} elevation={0}>
         <Grid className="org-info">
-          <img src="http://placecorgi.com/56" />
+          <img src="https://source.unsplash.com/random/56x56" />
           <Grid style={{ paddingLeft: 20 }}>
             <div className="org-name">Vinyl Plaid Street Art</div>
             <div className="private-text">Private Group</div>
