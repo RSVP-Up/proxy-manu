@@ -14,7 +14,7 @@ import {
 const Footer = () => (
   <div>
     <Segment style={{ margin: '5em 0em', padding: '5em 0em' }} vertical style={{ background: '#353E48' }}>
-      {/* <Container text> */}
+      <Container fluid style={{ padding: '0 20%' }}>
         <Grid columns="equal" stackable>
           <Grid.Row>
             <Grid.Column>
@@ -81,10 +81,10 @@ const Footer = () => (
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      {/* </Container> */}
+      </Container>
     </Segment>
     <Segment style={{ margin: '5em 0em', padding: '5em 0em' }} vertical style={{ background: '#2F363F' }}>
-      {/* <Container text inverted> */}
+      <Container fluid style={{ padding: '0 20%' }}>
         <List horizontal inverted link size="small">
           <List.Item>
             <Icon name="copyright outline" />
@@ -97,9 +97,9 @@ const Footer = () => (
             Meetup is a wholly owned subsidiary of WeWork Companies Inc.
           </List.Item>
         </List>
-      {/* </Container> */}
+      </Container>
       <br />
-      {/* <Container text inverted> */}
+      <Container fluid style={{ padding: '0 20%' }}>
         <List horizontal inverted link size="small">
           <List.Item as="a" href="#">
             Terms of Service
@@ -117,7 +117,7 @@ const Footer = () => (
             Cookie Policy
           </List.Item>
         </List>
-      {/* </Container> */}
+      </Container>
     </Segment>
   </div>
 
