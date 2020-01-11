@@ -36,7 +36,7 @@ const Info = () => {
   };
 
   return (
-    <Grid className="info-container">
+    <Grid className="info-container" style={{ position: 'sticky', top: 86 }}>
       <Paper style={{
         width: 340,
         height: 96,
