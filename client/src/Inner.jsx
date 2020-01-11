@@ -14,10 +14,10 @@ import Comment from './Comment';
 
 const Inner = () => (
   <div style={{ backgroundColor: '#F6F7F8' }}>
-    <Segment vertical style={{ padding: '2em 3em' }}>
+    <Segment vertical stackable style={{ padding: '2em 20%' }}>
       {/* Container not be necessary */}
-      <Grid container columns={2}>
-        <Grid.Column style={{ paddingLeft: '0' }}>
+      <Grid columns="equal">
+        <Grid.Column width={10} style={{ paddingLeft: '0' }}>
           <Image src="https://source.unsplash.com/random/600x337" />
           <Header as="h3" content="Details" />
           <Segment basic compact vertical>
@@ -36,17 +36,17 @@ const Inner = () => (
           <Segment basic compact vertical>
             If you have any questions feel free to reach out to our team at <a href="http://inspirobot.me">insiprobot.me</a>
           </Segment>
-          <div id="attendees" />
+          <Container fluid id="attendees" />
           <div>
             <Header as="h3" content="Photos" />
             <Button basic fluid>Add photos</Button>
           </div>
-          <div>
+          <div style={{ paddingTop: '40px' }}>
             <Header as="h3" content="Comments" />
             <Comment />
           </div>
         </Grid.Column>
-        <Grid.Column>
+        <Grid.Column width={2}>
           <Info />
         </Grid.Column>
       </Grid>
