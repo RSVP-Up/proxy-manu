@@ -1,29 +1,33 @@
 import React from 'react';
+import { Container } from 'semantic-ui-react';
 
-import { Image, Container } from 'semantic-ui-react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Inner from './Inner';
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
     };
   }
 
   render() {
     return (
-      <div>
+      <Container fluid>
         <Navbar />
-        {/* <div id="event"></div> */}
-        <Container>
-          {/* Two rails on one side image plus details + components */}
-          <Image src="https://source.unsplash.com/random" />
-          {/* Other components */}
-        </Container>
+        <div id="event" ></div>
+        <Inner />
+        <div
+          id="rsvp"
+          style={{
+            position: 'sticky',
+            bottom: 0,
+          }}
+        />
         <Footer />
-      </div>
+      </Container>
     );
   }
 }
